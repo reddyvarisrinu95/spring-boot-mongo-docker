@@ -1,0 +1,11 @@
+pipeline{
+
+    agent any
+
+    stages{
+        stage('checkout code'){
+            git credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/reddyvarisrinu95/spring-boot-mongo-docker.git'
+        }
+    }
+
+}
