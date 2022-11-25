@@ -4,7 +4,9 @@ pipeline{
 
     stages{
         stage('checkout code'){
+            steps{
             git credentialsId: 'GIT_CREDENTIALS', url: 'https://github.com/reddyvarisrinu95/spring-boot-mongo-docker.git'
+            }
         }
     }
 
